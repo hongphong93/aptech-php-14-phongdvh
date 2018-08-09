@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    background-color: black;
+}
+.bg-black{
+    background-color: black;
+}
+.header,.footer{
+    height: 25%;
+}
+.content{
+    height: 50%;
+}
+.border-bottom-4{
+    border-bottom: 4px !important;
+    border-bottom-color: white !important; 
+}
