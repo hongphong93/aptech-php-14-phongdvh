@@ -1,6 +1,7 @@
 body{
     height: 100vh;
-    background-color: black;
+    background: black;
+    color: white
 }
 .bg-black{
     background-color: black;
@@ -8,7 +9,7 @@ body{
 .header,.footer{
     height: 25%;
 }
-.content{
+.content-custom{
     height: 50%;
 }
 .border-bottom-4{
