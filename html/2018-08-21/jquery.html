@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="js-h1">Test</h1>
+    <h1 id="js-h2">Test 2</h1>
+    <button id="js-an">Ẩn</button>
+    <button id="js-hien">Hiện</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#js-an').click(function () {
+                $('#js-h1').hide(1000);
+            });
+            $('#js-hien').click(function(){
+                $('#js-h1').show(500);
+            });
+        });
+    </script>
+</body>
+
+</html>
