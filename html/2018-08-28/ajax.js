@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('#js-btn').click(function(){
-        $.get('http://192.168.60.141/aptech-php-demo/laravel/crud/public/api/v1/users', function(data, status){
+        $.get('./data.json', function(data, status){
             console.log(status);
             if(status == 'success'){
                 var table = '<table id="js-table" class="table text-center"></table>';
