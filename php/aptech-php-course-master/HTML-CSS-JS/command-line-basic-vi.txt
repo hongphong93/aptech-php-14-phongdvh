@@ -1,0 +1,63 @@
+1. pwd = print working directory : s? in ra thu m?c hi?n t?i mà terminal dang tr? t?i.
+
+2. ls = list : s? in ra danh sách các thu m?c và các file trong thu m?c hi?n t?i dang tr? t?i.
+ls -a : n?u mu?n th?y c? nh?ng file ?n thì dùng l?nh này.
+
+3. cd = change directory : di d?n m?t thu m?c nào dó
+vd: cd c:/xampp/htdocs -> d?n d?n thu m?c có du?ng d?n là c:/xampp/htdocs
+cd ../ : tr? l?i thu m?c tru?c dó
+4. mkdir = make directory : t?o m?t thu m?c t?i du?ng d?n hi?n t?i mà terminal dang tr? t?i.
+rmdir = remove directory : xóa m?t thu m?c TR?NG, n?u mu?n xóa thu m?c có ch?a file thì dùng rm.
+n?u mu?n t?o(xóa) m?t thu m?c hay file có kho?ng tr?ng (vd: new folder) thì dùng l?nh sau:
+mkdir new\ folder trong dó "\ " d? bi?u di?n kí t? d?c bi?t (space).
+
+5. rm = remove : dùng d? xóa file
+vd: rm index.php
+mu?n xóa thu m?c thì dùng câu l?nh sau:
+rm -r <tên thu m?c>
+
+6. touch : t?o m?t file m?i
+vd: touch index.html
+
+7. mu?n bi?t rõ hon v? m?t câu l?nh nào thì dùng:
+man <tên câu l?nh>
+vd: man ls
+
+8. cp = copy : dùng d? copy m?t file
+cp <du?ng d?n file c?n copy> <du?ng d?n t?i noi chua file copy>
+vd: cp index.php c:/xampp/htdocs/ -> copy file index.php t?i thu m?c c:/xampp/htdocs
+
+9. mv = move : dùng d? di chuy?n file
+mv <du?ng d?n file c?n di chuy?n> <du?ng d?n t?i noi c?n chuy?n file t?i>
+vd: mv text.txt c:/documents/ -> di chuy?n file t?i thu m?c c:/documents
+có th? dùng mv d? thay d?i tên file
+mv text.txt newtext.txt -> d?i tên file t? text.txt sang newtext.txt
+
+10. locate : dùng d? tìm ki?m file
+locate <tên file>
+vd: locate test.txt -> s? in ra du?ng d?n d?n t?t c? các file có tên là test.txt
+locate -i test -> dùng d? tìm ki?m nh?ng file có ch?a ch? "test"
+
+11. echo : có th? dùng d? in ra màn hình terminal ho?c ghi vài d? li?u don gi?n vào file theo cú pháp sau:
+echo <data> >> <tên file>
+vd: echo hello >> index.html
+
+12. cat : dùng d? d?c n?i dung c?a file
+cat <tên file>
+vd: cat index.html
+
+13. nano: dùng d? s? d?ng text editor trên terminal
+nano <tên file>
+vd: nano test.txt -> m? test.txt trong terminal d? ch?nh s?a, sau khi edit xong thì dùng Ctrl + x d? luu l?i.
+
+14. sudo = SuperUserDo : dùng d? truy c?p quy?n admin
+sudo <câu l?nh>
+
+15. clear: dùng d? d?n s?ch màn hình terminal
+
+16. apt-get : dùng d? làm vi?c v?i các packages trên Linux.
+vd: sudo apt-get install php -> thông thu?ng thì ph?i dùng quy?n admin d? cài d?t các packages
+
+17. chmod: dùng d? thay d?i quy?n truy c?p c?a file, làm cho file có th? th?c thi.Ví d? nhu t?i m?t file nào dó v? mà không th? ch?y du?c thì ph?i thay d?i ch? d? truy c?p và th?c thi nó. Chi ti?t có th? xem thêm trong link.
+
+18. Ctrl + Shift + T : d? m? thêm tab trong terminal ( tuong t? nhu m? thêm tab trong chrome).

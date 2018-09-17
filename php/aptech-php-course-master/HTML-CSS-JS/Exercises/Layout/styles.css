@@ -1,0 +1,45 @@
+.header {
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  background-color: lightcyan;
+  padding: 10px;
+}
+
+.content__image {
+  background-color: lightgreen;
+  height: 200px;
+  width: 200px;
+}
+
+.content__information {
+  width: 100%;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: lightsalmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content__information__top {
+  height: 50%;
+  background-color: lightskyblue;
+  margin-bottom: 5px;
+}
+
+.content__information__bottom {
+  margin-top: 5px;
+  height: 50%;
+  background-color: lightyellow;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: lightcoral;
+}
