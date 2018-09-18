@@ -1,12 +1,11 @@
 <?php
 require './connect-mysql.php';
 $connect = connectDatabase();
-
-$stmt = $connect->prepare('INSERT INTO TABLE myDB.users (name,email,password) values (?,?,?)');
-$stmt->bind_param("sssi", $name, $email, $password);
+$stmt = $connect->prepare("INSERT INTO myDB.users (name, email, password) VALUES (?, ?, ?)");
+$stmt->bind_param('sss', $name, $email, $password);
 
 $name = 'PhongDVH';
-$email = 'hongphong141293@gmail.com';
+$email = 'hongpghong141293@gmail.com';
 $password = '3456789';
 $stmt->execute();
 
