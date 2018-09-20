@@ -7,7 +7,8 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="login.php" method="post">
+    <form action="/2018-09-18/blog/public/login" method="post">
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
     Email <input type="text" name="email"><br>
     Password <input type="text" name="password"><br>
     <input type="submit">
