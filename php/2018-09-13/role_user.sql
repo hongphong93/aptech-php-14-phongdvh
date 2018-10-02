@@ -1,5 +1,5 @@
 CREATE DATABASE aptech_php_14;
-CREATE DATABASE aptech_php_14_phongdvh;
+CREATE DATABASE aptech_php_14_phongdvh;
 USE aptech_php_14_phongdvh;
 CREATE TABLE users (
 id int auto_increment primary key,
@@ -55,3 +55,7 @@ select name from users
 where name NOT like 'phongdvh';
 select * from role_user where user_id = (select id from users where name = 'namnh');
 select id from users where name = 'namnh';
+select * from roles;
+select * from users where id= (select user_id from role_user where role_id = 1);
+select * from roles;
+select name from users where id in (select user_id from role_user where role_id = (select id from roles where name = 'admin'));
